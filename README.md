@@ -19,6 +19,7 @@ Software tool to manage a software project.
 # Other files
 [Trello](https://trello.com/b/e9JXYcHB/group-13)<br>
 [Time spent](https://docs.google.com/spreadsheets/d/11prYMzwm3u-r01q-JYTA9KiewqtteWdSsmUbRfXNwww/edit#gid=634347005)<br>
+[Role description](https://docs.google.com/document/d/195QX52F8_163NgF6ZDA371yS6VPNdnxj2ce9t3elpsw/edit)<br>
 [Role schedule](https://docs.google.com/spreadsheets/d/11prYMzwm3u-r01q-JYTA9KiewqtteWdSsmUbRfXNwww/edit#gid=1063704)
 # Authors
 * Altug Altetmek
