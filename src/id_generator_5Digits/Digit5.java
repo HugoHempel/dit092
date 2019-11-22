@@ -8,6 +8,7 @@ public class Digit5 {
     private int ID;
     private String maskID;
 
+    // TODO: Remove this comment
     public Digit5 (String firstName, String lastName, String maskID, int birthday, int ID) {
         this.firstName = firstName;
         this.lastName = lastName;
