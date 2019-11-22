@@ -7,7 +7,7 @@ public class Digit5 {
     private int birthday;
     private int ID;
     private String maskID;
-
+    //TODO: Delete this comment later
     public Digit5 (String firstName, String lastName, String maskID, int birthday, int ID) {
         this.firstName = firstName;
         this.lastName = lastName;
