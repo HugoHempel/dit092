@@ -16,6 +16,8 @@ public class Digit5 {
         this.ID = ID;
     }
 
+    //getters and setters (not all are used atm, may not need all for this project but if someone is bored can find some
+    // sort of implementation for them? <3)
     public String getFirstName() {
         return firstName;
     }
