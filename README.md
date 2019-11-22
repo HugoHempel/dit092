@@ -17,8 +17,8 @@ Software tool to manage a software project.
 * [ ] The system should be able to search by team member to show the work products where (s)he has participated.
 
 # Other files
-[Trello](https://trello.com/b/e9JXYcHB/group-13)
-[Time spent](https://docs.google.com/spreadsheets/d/11prYMzwm3u-r01q-JYTA9KiewqtteWdSsmUbRfXNwww/edit#gid=634347005)
+[Trello](https://trello.com/b/e9JXYcHB/group-13)<br>
+[Time spent](https://docs.google.com/spreadsheets/d/11prYMzwm3u-r01q-JYTA9KiewqtteWdSsmUbRfXNwww/edit#gid=634347005)<br>
 [Role schedule](https://docs.google.com/spreadsheets/d/11prYMzwm3u-r01q-JYTA9KiewqtteWdSsmUbRfXNwww/edit#gid=1063704)
 # Authors
 * Altug Altetmek
