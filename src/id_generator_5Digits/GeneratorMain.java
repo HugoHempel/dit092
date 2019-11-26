@@ -9,7 +9,7 @@ public class GeneratorMain {
     public static Scanner scanner = new Scanner(System.in);
 
     //Prompt the user for member information
-    public static void createEmployee() {
+   /* public static void createEmployee() {
         String firstName = inputString(">> What is the member's first name: ");
         String lastName = inputString(">> What is the member's last name: ");
         String maskID = inputString(">> What is the member's preferred nickname: ");
@@ -23,7 +23,7 @@ public class GeneratorMain {
         System.out.println("\n>> Member added: " + ID.getFirstName() + " " + ID.getLastName());
         System.out.println(">> Generating member ID.......");
         System.out.println(">> Done!");
-    }
+    }*/
 
     //method to create the member's unique ID given their information
     public static int generateID(String firstName, String lastName, int birthday) {
@@ -77,7 +77,7 @@ public class GeneratorMain {
         return result;
     }
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         int memberAmount = inputInt(">> How many members are in your team: ");
         while (memberAmount > 0) {
             memberAmount--;
@@ -85,5 +85,5 @@ public class GeneratorMain {
         }
         System.out.println(generator5); //debug to check if all ID's were added
         scanner.close();
-    }
+    }*/
 }

@@ -1,27 +1,31 @@
+import id_generator_5Digits.GeneratorMain;
+
 public class Employee {
 
-    private String name;
+    private String forename;
+    private String surname;
     private int id;
-    private int birthNumber;
+    private int birthDay;
     private double hours;
     private double salary;
 
 
-    public Employee (String name, int birthNumber, double hours, double salary){
-        this.name = name;
-        this.birthNumber = birthNumber;
-        this.hours = hours;
+    public Employee (String forename, String surname, int birthDay, double salary){
+        this.forename = forename;
+        this.surname = surname;
+        this.birthDay = birthDay;
+        this.hours = 0;
         this.salary = salary;
         this.id = setId();
-        //TODO Change the id_generator so it can be called inside the constructor.
+
     }
 
-    public String getName() {
-        return name;
+    public String getForename() {
+        return forename;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.forename = forename;
     }
 
     public double getHours() {
@@ -43,7 +47,18 @@ public class Employee {
     public int getId(){return id;}
 
     public int setId(){
-        Planner planner = new Planner();
-        return planner.genId();
+        GeneratorMain idGen = new GeneratorMain();
+        id = idGen.generateID(this.forename, this.surname, this.birthDay);
+
+        return id;
+    }
+
+    @Override
+    public String toString() {
+      return "Name: " + forename + " " + surname + "\n" +
+              "ID: " + id + "\n" +
+              "Salary: " + salary + "/hour \n" +
+              "Hours worked: " + hours;
+
     }
 }
