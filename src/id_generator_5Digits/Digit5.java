@@ -1,5 +1,6 @@
 package id_generator_5Digits;
-
+//TODO Integrate the id_generator with the rest of the program.
+//TODO Move all the output and input options to the UI class.
 public class Digit5 {
 
     private String firstName;
