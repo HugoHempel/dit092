@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class UI {
 
     Scanner scanner = new Scanner(System.in);
-    Planner planner = new Planner();
+    // Planner planner = new Planner();
     ArrayList<Employee> employees = new ArrayList<>();
 
     private void printMainMenu(){
