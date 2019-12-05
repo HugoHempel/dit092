@@ -8,7 +8,7 @@ public class Employee {
     private int birthDay;
     private double hours;
     private double salary;
-
+    GeneratorMain idGen = new GeneratorMain();
 
     public Employee (String forename, String surname, int birthDay, double salary){
         this.forename = forename;
@@ -47,7 +47,6 @@ public class Employee {
     public int getId(){return id;}
 
     public int setId(){
-        GeneratorMain idGen = new GeneratorMain();
         id = idGen.generateID(this.forename, this.surname, this.birthDay);
 
         return id;
