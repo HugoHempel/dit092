@@ -64,6 +64,7 @@ public class GeneratorMain {
         return generatedID;
     }
 
+
     public static String inputString(String message) {
         System.out.print(message);
         String result = scanner.nextLine();
