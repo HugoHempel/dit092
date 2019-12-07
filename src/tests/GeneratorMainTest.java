@@ -1,3 +1,5 @@
+package tests;
+
 import id_generator_5Digits.GeneratorMain;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

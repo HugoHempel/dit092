@@ -95,12 +95,12 @@ public class UI {
     }
 
     private void registerEmployee(){
-        String forename = inputString("Please enter forename: ");
-        String surname = inputString("Please enter surname: ");
-        int birthDay = inputInt("Please enter birthday (YYYYMMDD): ");
-        double salary = inputDouble("Please enter salary: ");
-        //planner.addEmployee(forename, surname, birthDay, salary);
-        Employee employee = new Employee(forename, surname, birthDay, salary);
+        String firstname = inputString("Please enter the employees firstname: ");
+        String surname = inputString("Please enter the employees surname: ");
+        int birthDay = inputInt("Please enter the employees birthday (YYYYMMDD): ");
+        double salary = inputDouble("Please enter the employees salary: ");
+        //planner.addEmployee(firstname, surname, birthDay, salary);
+        Employee employee = new Employee(firstname, surname, birthDay, salary);
         employees.add(employee);
 
     }
