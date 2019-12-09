@@ -6,6 +6,7 @@ import java.util.Iterator;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -23,18 +24,19 @@ public class JSONreader {
 
             JSONObject jsonObject = (JSONObject) obj;
 
-            String projectName = (String) jsonObject.get("projectName");
-
+            String projectName = (String) jsonObject.get("projectName");            //creates a planner object
             String projectStartDate = (String) jsonObject.get("startDate");
             LocalDate startDate = LocalDate.parse(projectStartDate);
-
             String projectEndDate = (String) jsonObject.get("endDate");
             LocalDate endDate = LocalDate.parse(projectEndDate);
-
             Planner planner = new Planner(projectName, startDate, endDate);
 
-            JSONArray employeeList = (JSONArray) jsonObject.get("employeeList");
-
+            JSONArray employeeList = (JSONArray) jsonObject.get("employeeList");    //creates all employee objects
+            for(Object value : employeeList){
+                String employeeName = (String) jsonObject.get("projectName");
+                int employeeID = (int) jsonObject.get("startDate");
+                double salary = (double) jsonObject.get("endDate");
+            }
 
             //System.out.println(employeeList);
 
