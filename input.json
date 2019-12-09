@@ -4,44 +4,44 @@
   "endDate": "2020-01-10",
   "employeeList": [
     {
-      "employeeName": "Hjalmar Thunberg",
-      "employeeId": "18619",
+      "employeeForename": "Hjalmar",
+      "employeeSurname": "Thunberg",
       "employeeBirth": "951219",
       "salary": "250"
     },
     {
-      "employeeName": "Altug Altetmek",
-      "employeeId": "14587",
+      "employeeForename": "Altug ",
+      "employeeSurname": "Altetmek",
       "employeeBirth": "000929",
       "salary": "210"
     },
     {
-      "employeeName": "Christian O'Neil",
-      "employeeId": "23787",
+      "employeeForename": "Christian",
+      "employeeSurname": "O'Neil",
       "employeeBirth": "970627",
       "salary": "145"
     },
     {
-      "employeeName": "Clementine Jensen",
-      "employeeId": "26162",
+      "employeeForename": "Clementine",
+      "employeeSurname": "Jensen",
       "employeeBirth": "000826",
       "salary": "220"
     },
     {
-      "employeeName": "Hugo Hempel",
-      "employeeId": "13209",
+      "employeeForename": "Hugo",
+      "employeeSurname": "Hempel",
       "employeeBirth": "960308",
       "salary": "250"
     },
     {
-      "employeeName": "Linus Ivarsson",
-      "employeeId": "14975",
+      "employeeForename": "Linus",
+      "employeeSurname": "Ivarsson",
       "employeeBirth": "930807",
       "salary": "150"
     },
     {
-      "employeeName": "Linus Åberg",
-      "employeeId": "17004",
+      "employeeForename": "Linus",
+      "employeeSurname": "Åberg",
       "employeeBirth": "920604",
       "salary": "280"
     }
