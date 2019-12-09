@@ -9,13 +9,13 @@ public class Milestones {
     LocalDate plannedEndDate;
     LocalDate actualEndDate;
 
-    //Map<Integer, Double> employeeHours; //ID as the key, amount of hour as the value. ex. ID 1, hours 8
+    Map<Integer, Double> employeeHours; //ID as the key, amount of hour as the value. ex. ID 1, hours 8
 
-    public Milestones(String name, LocalDate startDate, LocalDate plannedEndDate, LocalDate actualEndDate/*, Map <Integer, Double> employeeHours*/){
+    public Milestones(String name, LocalDate startDate, LocalDate plannedEndDate, LocalDate actualEndDate, Map <Integer, Double> employeeHours){
         this.name = name;
         this.startDate = startDate;
         this.plannedEndDate = plannedEndDate;
         this.actualEndDate = actualEndDate;
-        //this.employeeHours = employeeHours;
+        this.employeeHours = employeeHours;
     }
 }
