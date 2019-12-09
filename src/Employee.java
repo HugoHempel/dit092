@@ -17,7 +17,6 @@ public class Employee {
         this.hours = 0;
         this.salary = salary;
         this.id = setId();
-
     }
 
     public String getForename() {
