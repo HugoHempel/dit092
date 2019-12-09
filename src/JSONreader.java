@@ -32,7 +32,22 @@ public class JSONreader {
             Planner planner = new Planner(projectName, startDate, endDate);
             System.out.println(obj);
 
-            JSONArray jsonArray = (JSONArray) jsonObject.get("employeeList");
+            JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
+            for( int i = 0; i < objArray.size(); i++){
+                JSONObject arrayIn = (JSONObject) objArray.get(i);
+                String employeeForename = (String) arrayIn.get("employeeForename");
+                String employeeSurname = (String) arrayIn.get("employeeSurname");
+                String employeeBirth = (String) arrayIn.get("employeeBirth");
+                String employeeSalary = (String) arrayIn.get("salary");
+
+                System.out.println("Employee forename is: " + employeeForename );
+                System.out.println("Employee surname is: " + employeeSurname);
+                System.out.println("Employee Birthdate is: " + employeeBirth);
+                System.out.println("Employee salary is: " + employeeSalary);
+                System.out.println("------------------------");
+            }
+
+
 
             //jsonArray.forEach(employee -> parseEmployeeObject((JSONObject) employee));
             //jsonArray.forEach(milestone -> parseMilestoneObject((JSONObject) milestone));
@@ -44,7 +59,9 @@ public class JSONreader {
 
     /*private void parseEmployeeObject(JSONObject employee) {
 
-        JSONObject employeeObject = (JSONObject) employee.get("employee");
+
+
+         JSONObject employeeObject = (JSONObject) employee.get("employee");
         String foreName = (String) employeeObject.get("employeeForename");
         String surName = (String) employeeObject.get("employeeSurname");
         int birthday = (int) employeeObject.get("employeeBirth");
