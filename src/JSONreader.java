@@ -32,6 +32,7 @@ public class JSONreader {
             Planner planner = new Planner(projectName, startDate, endDate);
             System.out.println(obj);
 
+            //Iterates through employeeList array inside json.input and prints information.
             JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
             for( int i = 0; i < objArray.size(); i++){
                 JSONObject arrayIn = (JSONObject) objArray.get(i);
@@ -46,6 +47,7 @@ public class JSONreader {
                 System.out.println("Employee salary is: " + employeeSalary);
                 System.out.println("------------------------");
             }
+
 
 
 
