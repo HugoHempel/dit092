@@ -1,8 +1,8 @@
 import id_generator_5Digits.GeneratorMain;
 
-//TODO: Discuss the implementations here on the next meeting.
-
 public class Employee {
+
+    //TODO: Discuss the implementations here on the next meeting.
 
     private String forename;
     private String surname;
@@ -27,7 +27,6 @@ public class Employee {
         this.forename = forename;
     }
 
-
     public double getSalary() {
         return salary;
     }
@@ -46,8 +45,8 @@ public class Employee {
 
     @Override
     public String toString() {
-      return "Name: " + forename + " " + surname + "\n" +
+      return "\nName: " + forename + " " + surname + "\n" +
               "ID: " + id + "\n" +
-              "Salary: " + salary + "/hour \n";
+              "Salary: " + salary + "/hour \n\n";
     }
 }
