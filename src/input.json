@@ -50,18 +50,36 @@
       }
     },
     {
+      "taskName": "Setup google docs and excel",
+      "startDate": "2019-11-12",
+      "plannedEndDate": "2019-11-15",
+      "actualEndDate": "2019-11-14",
+      "hoursPerEmployee": {
+        "INSERT ID HERE": "INSERT HOURS HERE"
+      }
+    },
+    {
+      "taskName": "Setup GitLab",
+      "startDate": "2019-11-15",
+      "plannedEndDate": "2019-11-18",
+      "actualEndDate": "2019-11-22",
+      "hoursPerEmployee": {
+        "18619": "3"
+      }
+    },
+    {
       "taskName": "Assignment 1",
       "startDate": "2019-11-25",
       "plannedEndDate": "2019-11-30",
       "actualEndDate": "2019-11-29",
       "hoursPerEmployee": {
         "18619": "5",
-        "14587": "",
-        "23787": "",
-        "26162": "",
-        "13209": "",
-        "14975": "",
-        "17004": ""
+        "14587": "INSERT HOURS",
+        "23787": "INSERT HOURS",
+        "26162": "INSERT HOURS",
+        "13209": "INSERT HOURS",
+        "14975": "INSERT HOURS",
+        "17004": "INSERT HOURS"
       }
     }
   ]
