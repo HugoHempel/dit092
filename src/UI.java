@@ -1,7 +1,12 @@
+import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-//TODO Add the menu, options and related classes.
+
 public class UI {
+
+    //TODO: Add the menu, options and related classes.
 
     Scanner scanner = new Scanner(System.in);
     // Planner planner = new Planner();
@@ -130,11 +135,18 @@ public class UI {
         return result;
     }*/
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ParseException {
         //UI ui = new UI();
         //ui.runMainMenu();
         JSONreader jsonreader = new JSONreader();
-        jsonreader.loadPlanner();
+        Planner planner = jsonreader.loadPlanner();
+
+        System.out.println("\n-- Stored planner information printed from the main --");
+        System.out.println(planner);
+        System.out.println("\n -- Stored employee information printed from the main --\n");
+        planner.printEmployees();
+        System.out.println("\n-- Stored milestone information printed from the main --\n");
+        planner.printMilestones();
     }
 
 }
