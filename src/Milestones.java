@@ -18,4 +18,12 @@ public class Milestones {
         this.actualEndDate = actualEndDate;
         this.employeeHours = employeeHours;
     }
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "StartDate: " + startDate + "\n" +
+                "PlannedEndDate: " + plannedEndDate + "\n" +
+                "ActualEndDate: " + actualEndDate + "\n" +
+                "Employees contributions: " + employeeHours + "\n";
+    }
 }
