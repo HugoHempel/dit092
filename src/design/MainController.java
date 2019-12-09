@@ -77,10 +77,6 @@ public class MainController {
         window.show();
     }
 
-    public void registerMember(ActionEvent event) throws IOException{
-
-    }
-
     @FXML
     public void viewMember(ActionEvent event) throws IOException {
 
