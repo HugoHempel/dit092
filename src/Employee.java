@@ -1,5 +1,7 @@
 import id_generator_5Digits.GeneratorMain;
 
+//TODO: Discuss the implementations here on the next meeting.
+
 public class Employee {
 
     private String forename;
