@@ -17,12 +17,13 @@ public class Planner {
           this.end = end;
      }
 
-     // temporarily storing them here until we finish calculation methods
+     /*
      LocalDate localDate = LocalDate.now();  // creates a date based on todays date [Hjalmar]
      float totalDays = ChronoUnit.DAYS.between(start, end); // compares 2 dates and returns the diff in numbers [Hjalmar]
      float nowDays = ChronoUnit.DAYS.between(start, localDate);
      float percentCompletePlanned = nowDays / totalDays;
      double percentCompleteActual = 0.2; // here we have to sum the time for all tasks, sum all completed tasks and then divide them(?) [Hjalmar]
+     */
 
      public double calcPV(){
           return percentCompletePlanned * budget;
