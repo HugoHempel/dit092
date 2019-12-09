@@ -23,7 +23,6 @@ public class Planner {
      float nowDays = ChronoUnit.DAYS.between(start, localDate);
      float percentCompletePlanned = nowDays / totalDays;
      double percentCompleteActual = 0.2; // here we have to sum the time for all tasks, sum all completed tasks and then divide them(?) [Hjalmar]
-     */
 
      public double calcPV(){
           return percentCompletePlanned * budget;
@@ -40,5 +39,5 @@ public class Planner {
      public double calcCV(){
           double actualCost = 500;  // here we have to sum total cost we spent so far (all workers hours times salary)
           return calcEV() - actualCost;
-     }
+     }*/
 }
