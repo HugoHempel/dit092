@@ -46,7 +46,7 @@
       "salary": "280"
     }
   ],
-  "milestones": [
+  "milestoneList": [
     {
       "taskName": "Setup Trello",
       "startDate": "2019-11-12",
