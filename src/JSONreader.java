@@ -33,9 +33,13 @@ public class JSONreader {
 
             JSONArray employeeList = (JSONArray) jsonObject.get("employeeList");    //creates all employee objects
             for(Object value : employeeList){
-                String employeeName = (String) jsonObject.get("projectName");
-                int employeeID = (int) jsonObject.get("startDate");
-                double salary = (double) jsonObject.get("endDate");
+                String employeeForename = (String) employeeList.get("employeeForename");
+                System.out.println(employeeForename);
+                String employeeSurname = (String) JSONArray.get("employeeSurname");
+                System.out.println(employeeSurname);
+                int employeeBirth = (int) jsonObject.get("employeeBirth");
+                double salary = (double) jsonObject.get("salary");
+                Employee employee = new Employee(employeeForename, employeeSurname, employeeBirth, salary);
             }
 
             //System.out.println(employeeList);
