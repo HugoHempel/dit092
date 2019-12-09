@@ -10,8 +10,8 @@ public class Planner {
      LocalDate startDate;
      LocalDate endDate;
 
-     Milestones milestones;
      ArrayList<Employee> employees = new ArrayList<>();
+     ArrayList<Milestones> milestones = new ArrayList<>();
 
      public Planner(String projectName, LocalDate startDate, LocalDate endDate){
           this.projectName = projectName;
@@ -42,10 +42,14 @@ public class Planner {
           double actualCost = 500;  // here we have to sum total cost we spent so far (all workers hours times salary)
           return calcEV() - actualCost;
      }*/
+
+     public void storeEmployee(Employee employee){
+          employees.add(employee);
+     }
      @Override
      public String toString() {
           return "Name: " + projectName + "\n" +
                   "StartDate: " + startDate + "\n" +
-                  "EndDate: " + endDate + "/hour \n";
+                  "EndDate: " + endDate + "\n";
      }
 }
