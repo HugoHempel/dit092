@@ -41,7 +41,6 @@ public class JSONreader {
         }
     }
 
-
     private void parseEmployeeObject(JSONObject jsonObject) {
 
         JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
@@ -77,7 +76,5 @@ public class JSONreader {
             Milestones milestone = new Milestones(taskName,startDate, plannedEndDate, actualEndDate, taskMemberMap);
             System.out.println(milestone);
         }
-
     }
-
 }
