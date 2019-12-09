@@ -6,13 +6,15 @@ public class Planner {
     //TODO complete the calculation methods
 
      double budget;                // the budget should be calculated in accordance to our hourly rate and working days [Linus]
+     String name;
      LocalDate start;
      LocalDate end;
 
      Milestones milestones;
      ArrayList<Employee> employees = new ArrayList<>();
 
-     public Planner(LocalDate start, LocalDate end){
+     public Planner(String name, LocalDate start, LocalDate end){
+          this.name = name;
           this.start = start;
           this.end = end;
      }
