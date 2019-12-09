@@ -8,17 +8,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 // TODO: FIX ALL ENCAPSULATION
 
@@ -73,7 +68,7 @@ public class MainController {
 
     public void addMember(ActionEvent event) throws IOException{
 
-        Parent addMemberParent = FXMLLoader.load(getClass().getResource("userInfo.fxml"));
+        Parent addMemberParent = FXMLLoader.load(getClass().getResource("newEmployee.fxml"));
         Scene addMemberScene = new Scene(addMemberParent);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -100,7 +95,7 @@ public class MainController {
 
     public void editEmployee(ActionEvent event) throws IOException{
 
-        Parent editMemberParent = FXMLLoader.load(getClass().getResource("addMemberContribution.fxml"));
+        Parent editMemberParent = FXMLLoader.load(getClass().getResource("editMember.fxml"));
         Scene editMemberScene = new Scene(editMemberParent);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
