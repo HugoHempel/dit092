@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.Iterator;
+import java.util.Map;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -30,58 +31,35 @@ public class JSONreader {
             String projectEndDate = (String) jsonObject.get("endDate");
             LocalDate endDate = LocalDate.parse(projectEndDate);
             Planner planner = new Planner(projectName, startDate, endDate);
-            System.out.println(obj);
+            System.out.println(planner);
 
-            //Iterates through employeeList array inside json.input and prints information.
-            JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
-            for( int i = 0; i < objArray.size(); i++){
-                JSONObject arrayIn = (JSONObject) objArray.get(i);
-                String employeeForename = (String) arrayIn.get("employeeForename");
-                String employeeSurname = (String) arrayIn.get("employeeSurname");
-                String employeeBirth = (String) arrayIn.get("employeeBirth");
-                String employeeSalary = (String) arrayIn.get("salary");
-
-                System.out.println("Employee forename is: " + employeeForename );
-                System.out.println("Employee surname is: " + employeeSurname);
-                System.out.println("Employee Birthdate is: " + employeeBirth);
-                System.out.println("Employee salary is: " + employeeSalary);
-                System.out.println("------------------------");
-            }
-
-
-
-
-            //jsonArray.forEach(employee -> parseEmployeeObject((JSONObject) employee));
-            //jsonArray.forEach(milestone -> parseMilestoneObject((JSONObject) milestone));
+            parseEmployeeObject(jsonObject);
+            parseMilestoneObject(jsonObject);
 
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
-    /*private void parseEmployeeObject(JSONObject employee) {
 
+    private void parseEmployeeObject(JSONObject jsonObject) {
 
+        JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
 
-         JSONObject employeeObject = (JSONObject) employee.get("employee");
-        String foreName = (String) employeeObject.get("employeeForename");
-        String surName = (String) employeeObject.get("employeeSurname");
-        int birthday = (int) employeeObject.get("employeeBirth");
-        double salary = (double) employeeObject.get("salary");
+        for (int i = 0; i < objArray.size(); i++) {
+            JSONObject arrayIn = (JSONObject) objArray.get(i);
+            String foreName = (String) arrayIn.get("employeeForename");
+            String surName = (String) arrayIn.get("employeeSurname");
+            String birth = (String) arrayIn.get("employeeBirth");
+            int birthDay = Integer.parseInt(birth);
+            String salary = (String) arrayIn.get("salary");
+            double employeeSalary = Double.parseDouble(salary);
 
-        Employee employees = new Employee(foreName, surName, birthday, salary);
-        System.out.println(employees);
+            Employee employees = new Employee(foreName, surName, birthDay, employeeSalary);
+            System.out.println(employees);
+        }
+    }
 
-    }*/
+    }
 
-    /*private void parseMilestoneObject(JSONObject milestone) {
-
-        JSONObject milestoneObject = (JSONObject) milestone.get("milestone");
-        String taskName = (String) milestoneObject.get("taskName");
-        LocalDate startDate = (LocalDate) milestoneObject.get("startDate");
-        LocalDate plannedEndDate = (LocalDate) milestoneObject.get("plannedEndDate");
-        LocalDate actualEndDate = (LocalDate) milestoneObject.get("actualEndDate");
-
-        Milestones milestone = new Milestones(taskName, startDate, plannedEndDate, actualEndDate);
-    }*/
 }
