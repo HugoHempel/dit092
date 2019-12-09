@@ -59,6 +59,24 @@ public class JSONreader {
             System.out.println(employees);
         }
     }
+    private void parseMilestoneObject(JSONObject jsonObject) {
+
+        JSONArray objArray = (JSONArray) jsonObject.get("milestoneList");
+
+        for (int i = 0; i < objArray.size(); i++) {
+            JSONObject arrayIn = (JSONObject) objArray.get(i);
+            String taskName = (String) arrayIn.get("taskName");
+            String taskStartDate = (String) arrayIn.get("startDate");
+            LocalDate startDate = LocalDate.parse(taskStartDate);
+            String plannedEnd = (String) arrayIn.get("plannedEndDate");
+            LocalDate plannedEndDate = LocalDate.parse(plannedEnd);
+            String actualEnd = (String) arrayIn.get("actualEndDate");
+            LocalDate actualEndDate = LocalDate.parse(actualEnd);
+            JSONObject taskMemberMap = (JSONObject) arrayIn.get("hoursPerEmployee");
+
+            Milestones milestone = new Milestones(taskName,startDate, plannedEndDate, actualEndDate, taskMemberMap);
+            System.out.println(milestone);
+        }
 
     }
 
