@@ -6,7 +6,6 @@ public class Employee {
     private String surname;
     private int id;
     private int birthDay;
-    private double hours;
     private double salary;
     GeneratorMain idGen = new GeneratorMain();
 
@@ -14,7 +13,6 @@ public class Employee {
         this.forename = forename;
         this.surname = surname;
         this.birthDay = birthDay;
-        this.hours = 0;
         this.salary = salary;
         this.id = setId();
     }
@@ -27,13 +25,6 @@ public class Employee {
         this.forename = forename;
     }
 
-    public double getHours() {
-        return hours;
-    }
-
-    public void setHours(double hours) {
-        this.hours = this.hours + hours;
-    }
 
     public double getSalary() {
         return salary;
@@ -55,8 +46,6 @@ public class Employee {
     public String toString() {
       return "Name: " + forename + " " + surname + "\n" +
               "ID: " + id + "\n" +
-              "Salary: " + salary + "/hour \n" +
-              "Hours worked: " + hours;
-
+              "Salary: " + salary + "/hour \n";
     }
 }
