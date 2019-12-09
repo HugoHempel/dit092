@@ -6,36 +6,43 @@
     {
       "employeeName": "Hjalmar Thunberg",
       "employeeId": "18619",
+      "employeeBirth": "951219",
       "salary": "250"
     },
     {
       "employeeName": "Altug Altetmek",
       "employeeId": "14587",
+      "employeeBirth": "000929",
       "salary": "210"
     },
     {
       "employeeName": "Christian O'Neil",
       "employeeId": "23787",
+      "employeeBirth": "970627",
       "salary": "145"
     },
     {
       "employeeName": "Clementine Jensen",
       "employeeId": "26162",
+      "employeeBirth": "000826",
       "salary": "220"
     },
     {
       "employeeName": "Hugo Hempel",
       "employeeId": "13209",
+      "employeeBirth": "960308",
       "salary": "250"
     },
     {
       "employeeName": "Linus Ivarsson",
       "employeeId": "14975",
+      "employeeBirth": "930807",
       "salary": "150"
     },
     {
       "employeeName": "Linus Åberg",
       "employeeId": "17004",
+      "employeeBirth": "920604",
       "salary": "280"
     }
   ],
