@@ -6,17 +6,17 @@ public class Planner {
     //TODO complete the calculation methods
 
      double budget;                // the budget should be calculated in accordance to our hourly rate and working days [Linus]
-     String name;
-     LocalDate start;
-     LocalDate end;
+     String projectName;
+     LocalDate startDate;
+     LocalDate endDate;
 
      Milestones milestones;
      ArrayList<Employee> employees = new ArrayList<>();
 
-     public Planner(String name, LocalDate start, LocalDate end){
-          this.name = name;
-          this.start = start;
-          this.end = end;
+     public Planner(String projectName, LocalDate startDate, LocalDate endDate){
+          this.projectName = projectName;
+          this.startDate = startDate;
+          this.endDate = endDate;
      }
 
      /*
@@ -42,4 +42,10 @@ public class Planner {
           double actualCost = 500;  // here we have to sum total cost we spent so far (all workers hours times salary)
           return calcEV() - actualCost;
      }*/
+     @Override
+     public String toString() {
+          return "Name: " + projectName + "\n" +
+                  "StartDate: " + startDate + "\n" +
+                  "EndDate: " + endDate + "/hour \n";
+     }
 }
