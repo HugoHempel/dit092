@@ -1,14 +1,9 @@
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.time.LocalDate;
-import java.util.Iterator;
-import java.util.Map;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -16,15 +11,19 @@ public class JSONreader {
 
     //TODO complete the JSONreader file where we will read the input file and create all objects to preload the program with
 
+    //Loads in input file and creates a planner object
     public void loadPlanner() {
 
         JSONParser parser = new JSONParser();
 
         try (FileReader reader = new FileReader("input.json")) {
 
-            Object obj = parser.parse(reader);
+            Object obj = parser.parse(reader);                   //Parse the content in input.json
 
-            JSONObject jsonObject = (JSONObject) obj;
+
+            JSONObject jsonObject = (JSONObject) obj;            //Convert above information into a json object
+
+            //Create and print object for planner
             String projectName = (String) jsonObject.get("projectName");
             String projectStartDate = (String) jsonObject.get("startDate");
             LocalDate startDate = LocalDate.parse(projectStartDate);
@@ -41,10 +40,12 @@ public class JSONreader {
         }
     }
 
+    //Creates employee object(s) and puts into array.
     private void parseEmployeeObject(JSONObject jsonObject) {
 
-        JSONArray objArray = (JSONArray) jsonObject.get("employeeList");
+        JSONArray objArray = (JSONArray) jsonObject.get("employeeList"); //Create the json array for employeeList in input.json
 
+        //Create and print object for employee
         for (int i = 0; i < objArray.size(); i++) {
             JSONObject arrayIn = (JSONObject) objArray.get(i);
             String foreName = (String) arrayIn.get("employeeForename");
@@ -58,10 +59,13 @@ public class JSONreader {
             System.out.println(employees);
         }
     }
+    //Creares milestone object(sw) and puts into array.
     private void parseMilestoneObject(JSONObject jsonObject) {
 
-        JSONArray objArray = (JSONArray) jsonObject.get("milestoneList");
+        JSONArray objArray = (JSONArray) jsonObject.get("milestoneList");  //Create the json array for milestoneList in input.json
 
+        //Create and print object for employee
+        //Also works for the maps key and value relationship
         for (int i = 0; i < objArray.size(); i++) {
             JSONObject arrayIn = (JSONObject) objArray.get(i);
             String taskName = (String) arrayIn.get("taskName");
