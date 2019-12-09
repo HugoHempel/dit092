@@ -12,7 +12,7 @@ import java.util.Scanner;
     //for us to understand how it works.
     //TODO: Refactor this for our code so that information read from the Milestones.txt are correctly printed on print.
 
-public class JsonFileCreator {
+/*public class JsonFileCreator {
     public static void main(String[] args) throws FileNotFoundException {
 
         Employee altug = new Employee("altug", "altetmek", 20000929, 20000);
@@ -77,3 +77,4 @@ public class JsonFileCreator {
     }
 }
 
+*/
