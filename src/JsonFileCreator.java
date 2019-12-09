@@ -8,7 +8,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.Scanner;
-
+    //This is only a template for json simple 1.1.1, we will have to refqctor it but it is here at the moment
+    //for us to understand how it works.
     //TODO: Refactor this for our code so that information read from the Milestones.txt are correctly printed on print.
 
 public class JsonFileCreator {
