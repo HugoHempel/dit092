@@ -5,9 +5,8 @@ public class UI {
 
     Scanner scanner = new Scanner(System.in);
     // Planner planner = new Planner();
-    ArrayList<Employee> employees = new ArrayList<>();
 
-    private void printMainMenu(){
+    /*private void printMainMenu(){
         System.out.println("Welcome to the Team Planner 1.0");
         System.out.println("--------------------------------------");
         System.out.println("Please chose a valid option below:");
@@ -129,11 +128,13 @@ public class UI {
         double result = scanner.nextDouble();
         scanner.nextLine();
         return result;
-    }
+    }*/
 
     public static void main(String[] args) {
-        UI ui = new UI();
-        ui.runMainMenu();
+        //UI ui = new UI();
+        //ui.runMainMenu();
+        JSONreader jsonreader = new JSONreader();
+        jsonreader.loadPlanner();
     }
 
 }
