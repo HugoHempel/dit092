@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-
+    //TODO: Refactor this for our code so that information read from the Milestones.txt are correctly printed on print.
 
 public class JsonFileCreator {
     public static void main(String[] args) throws FileNotFoundException {
