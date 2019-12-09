@@ -136,9 +136,8 @@ public class UI {
     }*/
 
     public static void main(String[] args) throws IOException, ParseException {
-        //UI ui = new UI();
-        //ui.runMainMenu();
-        JSONreader jsonreader = new JSONreader();
+
+        JsonReader jsonreader = new JsonReader();
         Planner planner = jsonreader.loadPlanner();
 
         System.out.println("\n-- Stored planner information printed from the main --");
