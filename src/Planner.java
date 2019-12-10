@@ -35,6 +35,18 @@ public class Planner {
 
      public void printMilestones(){ System.out.println(milestones); }
 
+     public String getProjectName() { return projectName; }
+
+     public void setProjectName(String projectName) { this.projectName = projectName; }
+
+     public LocalDate getStartDate() { return startDate; }
+
+     public void setStartDate(LocalDate startDate) { this.startDate = startDate; }
+
+     public LocalDate getEndDate() { return endDate; }
+
+     public void setEndDate(LocalDate endDate) { this.endDate = endDate; }
+
      @Override
      public String toString() {
           return "\nName: " + projectName + "\n" +
