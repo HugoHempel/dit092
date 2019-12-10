@@ -4,6 +4,7 @@ import java.util.Map;
 public class Milestones {
 
     //TODO: start working on the calculation methods of hours spent by users for each task etc which will be used by the planner class
+    //TODO: add the amount of hours in the input.json file, respectively to your ID's. Everyone will have to fill in their part.
 
     String name;
     LocalDate startDate;
