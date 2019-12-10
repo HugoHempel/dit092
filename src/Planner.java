@@ -33,9 +33,7 @@ public class Planner {
           this.milestones = MilestoneList;
      }
 
-     public void printMilestones(){
-          System.out.println(milestones);
-     }
+     public void printMilestones(){ System.out.println(milestones); }
 
      @Override
      public String toString() {
