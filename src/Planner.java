@@ -49,8 +49,8 @@ public class Planner {
 
      @Override
      public String toString() {
-          return "\nName: " + projectName + "\n" +
-                  "StartDate: " + startDate + "\n" +
-                  "EndDate: " + endDate + "\n";
+          return "\nName: " + getProjectName() + "\n" +
+                  "StartDate: " + getStartDate() + "\n" +
+                  "EndDate: " + getEndDate() + "\n";
      }
 }
