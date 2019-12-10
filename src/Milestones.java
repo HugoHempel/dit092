@@ -63,10 +63,10 @@ public class Milestones {
 
     @Override
     public String toString() {
-        return "Name: " + name + "\n" +
-                "StartDate: " + startDate + "\n" +
-                "PlannedEndDate: " + plannedEndDate + "\n" +
-                "ActualEndDate: " + actualEndDate + "\n" +
-                "Employees contributions: " + employeeHours + "\n\n";
+        return "Name: " + getName() + "\n" +
+                "StartDate: " + getStartDate() + "\n" +
+                "PlannedEndDate: " + getPlannedEndDate() + "\n" +
+                "ActualEndDate: " + getActualEndDate() + "\n" +
+                "Employees contributions: " + getEmployeeHours() + "\n\n";
     }
 }
