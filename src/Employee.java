@@ -23,7 +23,7 @@ public class Employee {
         return forename;
     }
 
-    public void setName(String name) {
+    public void setForename(String name) {
         this.forename = forename;
     }
 
@@ -41,6 +41,14 @@ public class Employee {
         id = idGen.generateID(this.forename, this.surname, this.birthDay);
 
         return id;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     @Override
