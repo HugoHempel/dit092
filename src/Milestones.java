@@ -6,10 +6,10 @@ public class Milestones {
     //TODO: start working on the calculation methods of hours spent by users for each task etc which will be used by the planner class
     //TODO: add the amount of hours in the input.json file, respectively to your ID's. Everyone will have to fill in their part.
 
-    String name;
-    LocalDate startDate;
-    LocalDate plannedEndDate;
-    LocalDate actualEndDate;
+    private String name;
+    private LocalDate startDate;
+    private LocalDate plannedEndDate;
+    private LocalDate actualEndDate;
 
     Map<Integer, Double> employeeHours; //ID as the key, amount of hour as the value. ex. ID 1, hours 8
 

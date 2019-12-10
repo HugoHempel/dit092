@@ -8,9 +8,9 @@ public class Planner {
     //TODO: complete the calculation methods
 
      double budget;                // the budget should be calculated in accordance to our hourly rate and working days [Linus]
-     String projectName;
-     LocalDate startDate;
-     LocalDate endDate;
+     private String projectName;
+     private LocalDate startDate;
+     private LocalDate endDate;
 
      List<Employee> employees = new ArrayList<>();
      List<Milestones> milestones = new ArrayList<>();
