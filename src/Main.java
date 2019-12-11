@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UI {
+public class Main {
 
     //TODO: Add the menu, options and related classes.
 

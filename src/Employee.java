@@ -33,7 +33,7 @@ public class Employee {
         return forename;
     }
 
-    public void setName(String name) {
+    public void setForename(String name) {
         this.forename = forename;
     }
 
@@ -53,10 +53,18 @@ public class Employee {
         return id;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     @Override
     public String toString() {
-      return "\nName: " + forename + " " + surname + "\n" +
-              "ID: " + id + "\n" +
-              "Salary: " + salary + "/hour \n\n";
+      return "\nName: " + getForename() + " " + getSurname() + "\n" +
+              "ID: " + getId() + "\n" +
+              "Salary: " + getSalary() + "/hour \n\n";
     }
 }

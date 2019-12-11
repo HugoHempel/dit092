@@ -8,9 +8,9 @@ public class Planner {
     //TODO: complete the calculation methods
 
      double budget;                // the budget should be calculated in accordance to our hourly rate and working days [Linus]
-     String projectName;
-     LocalDate startDate;
-     LocalDate endDate;
+     private String projectName;
+     private LocalDate startDate;
+     private LocalDate endDate;
 
      List<Employee> employees = new ArrayList<>();
      List<Milestones> milestones = new ArrayList<>();
@@ -33,14 +33,24 @@ public class Planner {
           this.milestones = MilestoneList;
      }
 
-     public void printMilestones(){
-          System.out.println(milestones);
-     }
+     public void printMilestones(){ System.out.println(milestones); }
+
+     public String getProjectName() { return projectName; }
+
+     public void setProjectName(String projectName) { this.projectName = projectName; }
+
+     public LocalDate getStartDate() { return startDate; }
+
+     public void setStartDate(LocalDate startDate) { this.startDate = startDate; }
+
+     public LocalDate getEndDate() { return endDate; }
+
+     public void setEndDate(LocalDate endDate) { this.endDate = endDate; }
 
      @Override
      public String toString() {
-          return "\nName: " + projectName + "\n" +
-                  "StartDate: " + startDate + "\n" +
-                  "EndDate: " + endDate + "\n";
+          return "\nName: " + getProjectName() + "\n" +
+                  "StartDate: " + getStartDate() + "\n" +
+                  "EndDate: " + getEndDate() + "\n";
      }
 }
