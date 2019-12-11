@@ -11,12 +11,22 @@ public class Employee {
     private double salary;
     GeneratorMain idGen = new GeneratorMain();
 
+    //This is for the new coming employees.
     public Employee (String forename, String surname, int birthDay, double salary){
         this.forename = forename;
         this.surname = surname;
         this.birthDay = birthDay;
         this.salary = salary;
         this.id = setId();
+    }
+
+    //This is for the already existing employees
+    public Employee (String forename, String surname, int birthDay, double salary, int id){
+        this.forename = forename;
+        this.surname = surname;
+        this.birthDay = birthDay;
+        this.salary = salary;
+        this.id = id;
     }
 
     public String getForename() {
