@@ -41,7 +41,7 @@ public class JsonReader {
             JSONObject arrayIn = (JSONObject) objArray.get(i);
             String foreName = (String) arrayIn.get("employeeForename");
             String surName = (String) arrayIn.get("employeeSurname");
-            int employeeId = Integer.parseInt((String) arrayIn.get("employeeId");
+            int employeeId = Integer.parseInt((String) arrayIn.get("employeeId"));
             int birthDay = Integer.parseInt((String) arrayIn.get("employeeBirth"));
             double employeeSalary = Double.parseDouble((String) arrayIn.get("salary"));
 
